@@ -21,7 +21,6 @@ const FlightDetails = () => {
   const availableSeats = flight.availableSeats;
   const totalSeats = flight.totalSeats;
   const percentage = (availableSeats / totalSeats) * 100;
-  console.log("123", availableSeats, totalSeats, percentage);
 
   const handleBookFlight = () => {
     navigate(`/book/${flight.id}`);

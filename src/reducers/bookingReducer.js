@@ -27,7 +27,12 @@ const bookingReducer = (state = initialState, action) => {
         ...state,
         bookings: state.bookings.map((booking) =>
           booking.id === action.payload.bookingId
-            ? { ...booking, travelers: action.payload.updatedTravelers }
+            ? {
+                ...booking,
+                travelers: action.payload.updatedTravelers,
+                seatsBooked: action.payload.newSeatsBooked,
+                totalPrice: action.payload.newTotalPrice,
+              }
             : booking
         ),
       };

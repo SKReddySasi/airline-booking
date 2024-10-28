@@ -40,7 +40,7 @@ const BookingConfirmation = () => {
                   </Col>
                   <Col md={6}>
                     <p>
-                      <strong>Booking ID:</strong> {booking.id}
+                      <strong>PNR ID:</strong> {booking.id}
                     </p>
                     <p>
                       <strong>Total Price:</strong> $

@@ -12,18 +12,27 @@ const FlightSearch = () => {
     date: "",
   });
   const [searchPerformed, setSearchPerformed] = useState(false);
+  const [prevBookingCount, setPrevBookingCount] = useState(0);
 
   const dispatch = useDispatch();
   const flights = useSelector((state) => {
     return state.flights.searchResults;
   });
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
+  const bookings = useSelector((state) => state.bookings.bookings);
 
   useEffect(() => {
     if (!isAuthenticated) {
       dispatch(resetSearchResults());
     }
-  }, [isAuthenticated, dispatch]);
+
+    // Check for changes in the bookings
+    const currentBookingCount = bookings.length;
+    if (currentBookingCount !== prevBookingCount) {
+      dispatch(resetSearchResults());
+      setPrevBookingCount(currentBookingCount); // Update the previous booking count
+    }
+  }, [isAuthenticated, bookings, dispatch, prevBookingCount]);
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;

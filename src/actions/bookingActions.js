@@ -6,15 +6,26 @@ export const CANCEL_BOOKING = "CANCEL_BOOKING";
 export const BOOKING_ERROR = "BOOKING_ERROR";
 export const UPDATE_BOOKING_TRAVELERS = "UPDATE_BOOKING_TRAVELERS";
 
+// Function to generate a unique PNR
+const generatePNR = (userId) => {
+  const date = new Date().toISOString().split("T")[0].replace(/-/g, "");
+  const randomNum = Math.floor(1000 + Math.random() * 9000); // Random 4-digit number
+  return `PNR-${date}-${userId}-${randomNum}`;
+};
+
 // Action to book a flight
 export const bookFlight = (bookingDetails) => async (dispatch, getState) => {
   try {
     const { auth } = getState(); // Get the auth state to retrieve the user ID
     const userId = auth.user.id;
 
+    // Generate PNR number
+    const pnr = generatePNR(userId);
+
     // Send a POST request to create a new booking
     const response = await axios.post("http://localhost:9000/bookings", {
       ...bookingDetails,
+      id: pnr,
       userId, // Include the user ID
     });
 
@@ -74,7 +85,7 @@ export const updateBookingTravelers =
         payload: { bookingId, updatedTravelers },
       });
 
-      toast.success("Traveler removed successfully.");
+      // toast.success("Traveler removed successfully.");
     } catch (error) {
       dispatch({
         type: BOOKING_ERROR,

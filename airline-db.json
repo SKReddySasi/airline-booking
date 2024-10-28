@@ -5,41 +5,62 @@
       "flightNumber": "AI202",
       "departure": "New York",
       "arrival": "Los Angeles",
-      "date": "2024-10-25",
+      "date": "2024-10-28",
       "time": "09:00",
       "price": 300,
-      "availableSeats": 71,
+      "availableSeats": 58,
       "totalSeats": 100,
       "airline": "Air India",
       "duration": "6h 30m",
       "layovers": 0,
       "flightType": "direct",
       "baggageAllowance": "1 checked bag, 1 carry-on",
-      "inFlightServices": ["Meals", "Wi-Fi"]
+      "inFlightServices": [
+        "Meals",
+        "Wi-Fi"
+      ],
+      "flightId": "1",
+      "seatsBooked": 2,
+      "totalPrice": 600,
+      "travelers": [
+        {
+          "firstName": "Sasi",
+          "lastName": "kumar",
+          "gender": "male"
+        },
+        {
+          "firstName": "Saurabh",
+          "lastName": "Mishra",
+          "gender": "male"
+        }
+      ],
+      "userId": "1"
     },
     {
       "id": "6",
       "flightNumber": "AI207",
       "departure": "New York",
       "arrival": "Los Angeles",
-      "date": "2024-10-25",
+      "date": "2024-10-28",
       "time": "12:00",
       "price": 700,
-      "availableSeats": 29,
+      "availableSeats": 27,
       "totalSeats": 100,
       "airline": "Air Asia",
       "duration": "6h 30m",
       "layovers": 0,
       "flightType": "direct",
       "baggageAllowance": "2 checked bag, 1 carry-on",
-      "inFlightServices": ["Meals"]
+      "inFlightServices": [
+        "Meals"
+      ]
     },
     {
       "id": "7",
       "flightNumber": "AI205",
       "departure": "New York",
       "arrival": "Los Angeles",
-      "date": "2024-10-25",
+      "date": "2024-10-28",
       "time": "7:00",
       "price": 500,
       "availableSeats": 23,
@@ -49,31 +70,16 @@
       "layovers": 0,
       "flightType": "direct",
       "baggageAllowance": "1 checked bag, 1 carry-on",
-      "inFlightServices": ["Meals"]
+      "inFlightServices": [
+        "Meals"
+      ]
     },
     {
       "id": "8",
       "flightNumber": "AI305",
       "departure": "New York",
       "arrival": "Los Angeles",
-      "date": "2024-10-25",
-      "time": "7:00",
-      "price": 500,
-      "availableSeats": 1,
-      "totalSeats": 100,
-      "airline": "Air India",
-      "duration": "7h 30m",
-      "layovers": 0,
-      "flightType": "direct",
-      "baggageAllowance": "1 checked bag, 1 carry-on",
-      "inFlightServices": ["Meals"]
-    },
-    {
-      "id": "9",
-      "flightNumber": "AI305",
-      "departure": "New York",
-      "arrival": "Los Angeles",
-      "date": "2024-10-25",
+      "date": "2024-10-28",
       "time": "7:00",
       "price": 500,
       "availableSeats": 0,
@@ -83,14 +89,35 @@
       "layovers": 0,
       "flightType": "direct",
       "baggageAllowance": "1 checked bag, 1 carry-on",
-      "inFlightServices": ["Meals"]
+      "inFlightServices": [
+        "Meals"
+      ]
+    },
+    {
+      "id": "9",
+      "flightNumber": "AI305",
+      "departure": "New York",
+      "arrival": "Los Angeles",
+      "date": "2024-10-28",
+      "time": "7:00",
+      "price": 500,
+      "availableSeats": 0,
+      "totalSeats": 100,
+      "airline": "Air India",
+      "duration": "7h 30m",
+      "layovers": 0,
+      "flightType": "direct",
+      "baggageAllowance": "1 checked bag, 1 carry-on",
+      "inFlightServices": [
+        "Meals"
+      ]
     },
     {
       "id": "10",
       "flightNumber": "AI305",
       "departure": "New York",
       "arrival": "Los Angeles",
-      "date": "2024-10-25",
+      "date": "2024-10-28",
       "time": "7:00",
       "price": 500,
       "availableSeats": 100,
@@ -100,31 +127,55 @@
       "layovers": 0,
       "flightType": "direct",
       "baggageAllowance": "1 checked bag, 1 carry-on",
-      "inFlightServices": ["Meals"]
+      "inFlightServices": [
+        "Meals"
+      ]
     },
     {
       "id": "11",
       "flightNumber": "BA101",
       "departure": "Chicago",
       "arrival": "Miami",
-      "date": "2024-10-25",
+      "date": "2024-10-28",
       "time": "14:00",
       "price": 250,
-      "availableSeats": 20,
+      "availableSeats": 17,
       "totalSeats": 100,
       "airline": "British Airways",
       "duration": "3h 10m",
       "layovers": 0,
       "flightType": "direct",
       "baggageAllowance": "2 checked bags",
-      "inFlightServices": ["Meals"]
+      "inFlightServices": [
+        "Meals"
+      ],
+      "flightId": "11",
+      "seatsBooked": 3,
+      "totalPrice": 750,
+      "travelers": [
+        {
+          "firstName": "Sasi",
+          "lastName": "kumar",
+          "gender": "male"
+        },
+        {
+          "firstName": "Saurabh",
+          "lastName": "Mishra",
+          "gender": "male"
+        },
+        {
+          "firstName": "Vijay",
+          "lastName": "kumar",
+          "gender": "male"
+        }
+      ]
     },
     {
       "id": "3",
       "flightNumber": "DL303",
       "departure": "San Francisco",
       "arrival": "Seattle",
-      "date": "2024-10-25",
+      "date": "2024-10-28",
       "time": "11:00",
       "price": 150,
       "availableSeats": 30,
@@ -134,14 +185,16 @@
       "layovers": 0,
       "flightType": "direct",
       "baggageAllowance": "1 checked bag",
-      "inFlightServices": ["Entertainment"]
+      "inFlightServices": [
+        "Entertainment"
+      ]
     },
     {
       "id": "4",
       "flightNumber": "UA404",
       "departure": "Houston",
       "arrival": "Dallas",
-      "date": "2024-10-25",
+      "date": "2024-10-28",
       "time": "18:00",
       "price": 100,
       "availableSeats": 20,
@@ -158,20 +211,74 @@
       "flightNumber": "SW505",
       "departure": "Los Angeles",
       "arrival": "Las Vegas",
-      "date": "2024-10-25",
+      "date": "2024-10-28",
       "time": "12:00",
       "price": 120,
-      "availableSeats": 60,
+      "availableSeats": 54,
       "totalSeats": 100,
       "airline": "Southwest Airlines",
       "duration": "1h 15m",
       "layovers": 0,
       "flightType": "direct",
       "baggageAllowance": "2 checked bags, 1 carry-on",
-      "inFlightServices": ["Meals", "Entertainment"]
+      "inFlightServices": [
+        "Meals",
+        "Entertainment"
+      ],
+      "flightId": "5",
+      "seatsBooked": 1,
+      "totalPrice": 120,
+      "travelers": [
+        {
+          "firstName": "Saurabh",
+          "lastName": "Mishra",
+          "gender": "male"
+        }
+      ]
     }
   ],
-  "bookings": [],
+  "bookings": [
+    {
+      "travelers": [
+        {
+          "firstName": "Saurabh",
+          "lastName": "Mishra",
+          "gender": "male"
+        }
+      ],
+      "id": "PNR-20241028-1-9675"
+    },
+    {
+      "travelers": [
+        {
+          "firstName": "Sasi",
+          "lastName": "Kumar",
+          "gender": "male"
+        }
+      ],
+      "id": "PNR-20241028-1-7596"
+    },
+    {
+      "travelers": [
+        {
+          "firstName": "Sasi1",
+          "lastName": "kumar1",
+          "gender": "male"
+        },
+        {
+          "firstName": "Saurabh",
+          "lastName": "Mishra",
+          "gender": "male"
+        },
+        {
+          "firstName": "Vijay",
+          "lastName": "kumar",
+          "gender": "male"
+        }
+      ],
+      "id": "PNR-20241028-1-9622"
+    }
+  ],
   "users": [
     {
       "id": "1",

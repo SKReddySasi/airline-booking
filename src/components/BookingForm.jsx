@@ -16,7 +16,6 @@ const BookingForm = () => {
   const selectedFlight = useSelector((state) => {
     return state.flights.searchResults.find((flight) => flight.id === flightId);
   });
-  console.log("selected flight", selectedFlight);
 
   const [seatsBooked, setSeatsBooked] = useState(1);
   const [travelerDetails, setTravelerDetails] = useState([]);
